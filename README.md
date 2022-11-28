@@ -1,1 +1,1 @@
-https://github.com/ops-ril/recallv3.ui/
+https://smohadjer.github.io/recallv3/
