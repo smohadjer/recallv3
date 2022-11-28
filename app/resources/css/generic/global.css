@@ -1,0 +1,145 @@
+html {
+  -webkit-text-size-adjust: 100%;
+  /* Prevent font scaling in landscape while allowing user zoom in iOS */ }
+
+/* for older IEs including ie11 */
+article, aside, main, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both; }
+
+body {
+    line-height: 1.42857143;
+    margin: 0;
+    background: #eee;
+    color: black;
+}
+
+body, h1, h2, h3, h4, h5, h6, textarea, input, option {
+    font-family: 'NotoSans', 'Helvetica', 'Arial', sans-serif;
+}
+
+/* Setting font-weight to 300 for consistency with eventify */
+body, h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+body { font-size: 14px; }
+h1 {
+    font-size: 36px;
+    margin-bottom: 0;
+}
+h2 { font-size: 30px; }
+h3 { font-size: 24px; }
+h4 {
+    font-size: 18px;
+    line-height: 24px;
+}
+h5 { font-size: 14px; }
+h6 { font-size: 12px; }
+
+h1 + p {
+    margin-top: 10px;
+}
+
+a, a:focus {
+  color: #007878;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #036060;
+  text-decoration: underline;
+}
+
+figure {
+  margin: 0;
+  max-width: 768px;
+}
+
+figure img {
+	width: 100%;
+}
+
+aside {
+  background: #ddd; 
+}
+
+ul {
+  padding-left: 1em;
+}
+
+dl.listing dt {
+    float: left;
+}
+
+dl.listing dd::after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+dl.listing dt::after {
+    content: ":";
+    padding-right: 0.5em;
+}
+
+li {
+  line-height: 1.5;
+}
+
+button {
+  padding: 0.5em 1em;
+}
+
+textarea {
+    min-width: 300px;
+    min-height: 100px;
+}
+
+footer {
+	margin: 3em 1em 1em;
+  border-top: solid 1px #999;
+}
+
+table {
+    border-spacing: 0;
+}
+
+th, td {
+    text-align: left;
+}
+
+th.centered, td.centered {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.no-break {
+  white-space: nowrap;
+}
+
+/* to fix blurry downscaled images in Chrome */
+img {
+    image-rendering: -webkit-optimize-contrast;
+}

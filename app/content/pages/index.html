@@ -1,0 +1,116 @@
+<main class="starterWizard">
+  <div hidden class="modal">Hello from Modal</div>
+  <div class="main__links">
+      <a class="icon icon--back icon--size-18" href="javascript:void(0);">Back to Events List</a>
+      <span>Logged-in as saeid+pos@fastmail.fm</span>
+  </div>
+  <article>
+      <header class="starterWizard__header">
+          <h1>Event Details</h1>
+          <div>
+              <p>Event Name: <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></p>
+              <p>Event Id: <span>7</span></p>
+          </div>
+      </header>
+      <ul class="starterWizard__nav starterWizard__nav-responder">
+          <li><a class="icon icon--size-14 icon--overview" href="javascript:void(0);">Overview</a></li>
+          <li class="selected"><a class="icon icon--product"  href="javascript:void(0);">Products</a></li>
+          <li><a class="icon icon--report icon--size-18" href="javascript:void(0);">Reports</a></li>
+          <li><a class="icon icon--size-18 icon--contact" href="javascript:void(0);">Starter Contact Information</a></li>
+      </ul>
+      <div class="ril--table">
+          <div class="flex flex--end">
+              <div class="button-wrapper">
+                  <button type="button" class="btn btn-raised btn-primary btn-sm btn-block btn-responsive btn-raised verify-event">
+                      Verify &amp; Complete Event <div class="ripple-container"></div>
+                  </button>
+              </div>
+              <div>
+                  <a class="icon icon--green icon--size-14 icon--print" href="javascript:print();">Take-along Worksheet</a> |
+                  <span class="summary">Showing <b>1-1</b> of <b>1</b> item</span>
+              </div>
+          </div>
+          <div class="table-wrapper">
+              <table>
+                  <thead>
+                      <tr>
+                          <th>UPC</th>
+                          <th>Case UPC</th>
+                          <th>Description</th>
+                          <th>Brand Name</th>
+                          <th>Properties</th>
+                          <th>Image</th>
+                          <th>Quantity Removed</th>
+                          <th>Unit Package</th>
+                          <th>Comments</th>
+                          <th>Responsible Person</th>
+                          <th>Disposition Witness</th>
+                          <th>Date of Disposition</th>
+                          <th>Add File (if req.)</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr class="event-items-retailer" data-key="0">
+                          <td class="event-items-retailer" data-col-seq="1">123456789</td>
+                          <td class="event-items-retailer" data-col-seq="2">12345667789</td>
+                          <td class="event-items-retailer" data-col-seq="4">Lorem ipsum dolor ist</td>
+                          <td class="event-items-retailer" data-col-seq="5">Aliquam orci erat gravida</td>
+                          <td class="event-items-retailer" data-col-seq="7">
+                              <ul>
+                                  <li>Internal Product Code: 23423432</li>
+                                  <li>Pack: 12</li>
+                                  <li>Size: 24</li>
+                                  <li>Category: Lorem</li>
+                                  <li>Lot Code: 122342343245</li>
+                                  <li>Use By Date: 11.11.23</li>
+                                  <li>FDA USDA #: 123123123</li>
+                              </ul>
+                          </td>
+                          <td class="event-items-retailer" data-col-seq="10"><a href="https://recallinfolink-dev.s3.us-east-1.amazonaws.com/images/5.flower.jpg"><img src="https://recallinfolink-dev.s3.us-east-1.amazonaws.com/images/5.flower.jpg" width="40" alt="Product image"></a></td>
+                          <td class="event-items-retailer" data-col-seq="14"><a class="event-response-link event-response-qty-returned-empty" href="#" data-name="qty_returned" data-pk="4">Enter Quantity</a></td>
+                          <td class="event-items-retailer" data-col-seq="15"><a class="event-response-link" href="#" data-name="unit_package" data-pk="4" tabindex="-1">Each</a></td>
+                          <td class="event-items-retailer" data-col-seq="16"><a class="event-response-link event-response-empty" href="#" data-name="comments" data-pk="4" tabindex="-1">Enter Comments</a></td>
+                          <td class="event-items-retailer" data-col-seq="17"><a class="event-response-link event-response-empty" href="#" data-name="responsible_person" data-pk="4" tabindex="-1">Enter Responsible Person</a></td>
+                          <td class="event-items-retailer" data-col-seq="18"><a class="event-response-link event-response-empty" href="#" data-name="disposition_witness" data-pk="4" tabindex="-1">Enter Disposition Witness</a></td>
+                          <td class="event-items-retailer" data-col-seq="19"><a class="event-response-link event-response-empty" href="#" data-name="date_of_disposition" data-pk="4" tabindex="-1">Enter Date Of Disposition</a></td>
+                          <td class="event-items-retailer" data-col-seq="20"><button type="button" class="btn btn-raised btn-default btn-sm" data-toggle="modal" data-name="file-upload" data-pk="4" data-target="#w1">Browse...</button></td>
+                      </tr>
+                      <tr class="event-items-retailer" data-key="0">
+                          <td class="event-items-retailer" data-col-seq="1">561456789</td>
+                          <td class="event-items-retailer" data-col-seq="2">87564566778</td>
+                          <td class="event-items-retailer" data-col-seq="4">Omnis itaque reiciendis sunt at culpa</td>
+                          <td class="event-items-retailer" data-col-seq="5">Lorem ipsum</td>
+                          <td class="event-items-retailer" data-col-seq="7">
+                              <ul>
+                                  <li>Internal Product Code: 78923432</li>
+                                  <li>Pack: 100</li>
+                                  <li>Size: 3</li>
+                                  <li>FDA USDA #: 123123123</li>
+                              </ul>
+                          </td>
+                          <td class="event-items-retailer"></td>
+                          <td class="event-items-retailer" data-col-seq="14"><a class="event-response-link event-response-qty-returned-empty" href="#" data-name="qty_returned" data-pk="4">Enter Quantity</a></td>
+                          <td class="event-items-retailer" data-col-seq="15"><a class="event-response-link" href="#" data-name="unit_package" data-pk="4" tabindex="-1">Each</a></td>
+                          <td class="event-items-retailer" data-col-seq="16"><a class="event-response-link event-response-empty" href="#" data-name="comments" data-pk="4" tabindex="-1">Enter Comments</a></td>
+                          <td class="event-items-retailer" data-col-seq="17"><a class="event-response-link event-response-empty" href="#" data-name="responsible_person" data-pk="4" tabindex="-1">Enter Responsible Person</a></td>
+                          <td class="event-items-retailer" data-col-seq="18"><a class="event-response-link event-response-empty" href="#" data-name="disposition_witness" data-pk="4" tabindex="-1">Enter Disposition Witness</a></td>
+                          <td class="event-items-retailer" data-col-seq="19"><a class="event-response-link event-response-empty" href="#" data-name="date_of_disposition" data-pk="4" tabindex="-1">Enter Date Of Disposition</a></td>
+                          <td class="event-items-retailer" data-col-seq="20"><button type="button" class="btn btn-raised btn-default btn-sm" data-toggle="modal" data-name="file-upload" data-pk="4" data-target="#w1">Browse...</button></td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+          <div class="flex">
+              <div class="button-wrapper">
+                  <button type="button" class="btn btn-raised btn-primary btn-sm btn-block btn-responsive btn-raised verify-event">
+                      Verify &amp; Complete Event <div class="ripple-container"></div>
+                  </button>
+              </div>
+              <div>
+                  <a class="icon icon--green  icon--size-14 icon--print" href="javascript:print();">Take-along Worksheet</a> |
+                  <span class="summary">Showing <b>1-1</b> of <b>1</b> item</span>
+              </div>
+          </div>
+      </div>
+  </article>
+</main>

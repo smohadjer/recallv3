@@ -1,0 +1,82 @@
+.icon::before {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    content: "";
+    vertical-align: text-bottom;
+    margin-right: 5px;
+    background-size: cover;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+}
+
+.navbar .icon::before,
+.icon::before {
+    background-color: white;
+}
+
+.icon--green::before {
+    background-color: #007878;
+}
+
+.icon--size-14::before {
+    width: 14px;
+    height: 14px;
+}
+
+.icon--size-16::before {
+    width: 16px;
+    height: 16px;
+}
+
+.icon--size-18::before {
+    width: 18px;
+    height: 18px;
+}
+
+.icon--size-20::before {
+    width: 20px;
+    height: 20px;
+}
+
+.icon--envelope::before {
+    -webkit-mask-image: url(../img/mail.svg);
+    mask-image: url(../img/mail.svg);
+}
+
+.icon--home::before,
+.icon--overview::before {
+    -webkit-mask-image: url(../img/overview.svg);
+    mask-image: url(../img/overview.svg);
+    vertical-align: -1px;
+}
+
+.icon--contact::before {
+    -webkit-mask-image: url(../img/phone.svg);
+    mask-image: url(../img/phone.svg);
+    margin-right: 3px;
+}
+
+.icon--print::before {
+    -webkit-mask-image: url(../img/print.svg);
+    mask-image: url(../img/print.svg);
+    vertical-align: -2px;
+}
+
+.icon--report::before {
+    -webkit-mask-image: url(../img/report.svg);
+    mask-image: url(../img/report.svg);
+    vertical-align: -3px;
+}
+
+.icon--product::before {
+    -webkit-mask-image: url(../img/product.svg);
+    mask-image: url(../img/product.svg);
+    vertical-align: -2px;
+}
+
+.icon--back::before {
+    -webkit-mask-image: url(../img/back.svg);
+    mask-image: url(../img/back.svg);
+}
+

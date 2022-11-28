@@ -1,0 +1,428 @@
+.starterWizard {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+@media screen and (min-width: 768px) {
+    .starterWizard p,
+    .starterWizard li {
+        max-width: 700px;
+    }
+}
+
+.starterWizard .alert {
+    border: 0;
+    border-radius: 0;
+}
+
+.starterWizard .alert.alert-success {
+    background-color: #4caf50;
+    color: white;
+}
+
+.starterWizard .alert .close {
+    background: none;
+    font-size: 21px;
+    line-height: 1;
+    font-weight: bold;
+    padding: 0;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: 0.2;
+}
+
+.starterWizard__header {
+	margin-bottom: 2em;
+}
+
+.starterWizard__header > h1,
+.starterWizard__header > h3 {
+	text-align: center;
+	padding-bottom: 0.25em;
+	border-bottom: solid 1px #999;
+	margin: 0;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.starterWizard__header > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 1.1em;
+  padding-top: 0.5em;
+}
+
+@media (max-width: 767px) {
+    .starterWizard__header > div > p {
+        flex-basis: 50%;
+    }
+
+    .starterWizard__header > div > p + p {
+        text-align: right;
+    }
+}
+
+.starterWizard__header > div > p {
+	margin: 0;
+}
+
+@media (min-width: 768px) {
+    .starterWizard__subHeader {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.starterWizard__linkedAccount {
+    margin-top: 0.5em;
+    font-size: 15px
+}
+
+.starterWizard__links {
+	font-size: 1.2em;
+	margin: 1em 0;
+	text-align: center;
+}
+
+.starterWizard  .hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #333;
+	font-size: 14px;
+}
+
+.starterWizard .btn {
+	border: 0;
+	display: inline-block;
+	text-decoration: none;
+	padding: 0.5em 1em;
+	background: #007878;
+	color: white;
+	font-size: 14px;
+	line-height: 1;
+	cursor: pointer;
+}
+
+.starterWizard td .btn {
+	margin-bottom: 3px; /* so when buttons wrap below each other they don't touch */
+}
+
+.starterWizard .btn:hover {
+	background: #036060;
+}
+
+.starterWizard .btn[disabled] {
+	background: #ccc !important;
+	cursor: default !important;
+}
+
+/* undo styles coming from framework */
+.starterWizard .row {
+	margin: 0;
+	clear: both;
+	margin-top: 1.5em;
+}
+
+.starterWizard .row::before,
+.starterWizard .row::after {
+	content: none;
+}
+/* undo ends */
+
+.starterWizard .row--center {
+	display: flex;
+	justify-content: space-around;
+}
+
+.starterWizard .row--right-aligned {
+    text-align: right;
+}
+
+@media (max-width: 767px) {
+    .starterWizard .row--apart .btn--medium {
+        margin-bottom: 0.5em;
+    }
+}
+
+@media (min-width: 768px) {
+    .starterWizard .row--apart {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.starterWizard .row--buttons .btn.btn--medium,
+.starterWizard .btn.btn--medium {
+	font-size: 15px;
+	padding: 10px 14px;
+}
+
+.starterWizard .btn.btn--large,
+.starterWizard .row--buttons .btn {
+	font-size: 18px;
+	padding: 12px 20px;
+}
+
+.starterWizard::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+#ui-datepicker-div {
+	z-index: 10 !important; /* so that it doesn't go under event_start_time input field */
+}
+
+.starterWizard__modalClose + .starterWizard__message,
+.btn + .starterWizard__message {
+  margin-top: 30px;
+}
+
+.starterWizard__message h1 {
+    margin-top: 0;
+    line-height: 1.25;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.starterWizard__message p {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.starterWizard__message .date {
+    text-align: right;
+    margin: 1em  0;
+}
+
+.starterWizard__message .confirm {
+    margin: 1em 0;
+}
+
+.starterWizard__message .btn {
+    margin-left: 20px;
+}
+
+.starterWizard__signupSuccess {
+    background: white;
+    max-width: 768px;
+    margin: 2em auto;
+    padding: 3em 4em 4em;
+}
+
+.starterWizard__signupSuccess h2 {
+    text-align: center;
+}
+
+.starterWizard__signupSuccess p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.starterWizard__list {
+    margin: 2em 0;
+}
+
+.starterWizard__listItem {
+    margin: 1em 0;
+    padding: 10px 15px;
+    background: white;
+}
+
+.starterWizard__listItemTitle {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+@media (min-width: 1024px) {
+    .starterWizard__listItemTitle {
+        font-size: 22px;
+    }
+
+    .starterWizard__listItemContent {
+        display: flex;
+        margin-top: 15px;
+    }
+
+    .starterWizard__listColumn:first-child {
+        flex-basis: 120px;
+    }
+
+    .starterWizard__listColumn:nth-child(2) {
+        flex-basis: 500px;
+    }
+
+    .starterWizard__listColumn:nth-child(3) {
+        flex-basis: 500px;
+    }
+
+    .starterWizard__listColumn:nth-child(4) {
+        flex-basis: 50px;
+    }
+}
+
+.starterWizard__listColumn .btn {
+    min-width: 85px; /* so that both buttons have the same width */
+    margin-bottom: 5px; /* so that when buttons wrap they don't touch */
+}
+
+@media (min-width: 1024px) {
+    .starterWizard__listColumn .btn {
+        min-width: 0;
+        font-size: 0;
+        background: white;
+        color: #007878;
+        display: block;
+        margin-bottom: 5px;
+        padding: 5px;
+    }
+
+    .starterWizard__listColumn .btn:hover {
+        background: white;
+        color: #007878;
+        box-shadow: none;
+    }
+}
+
+.starterWizard__listImage {
+    width: 120px;
+    height: 90px;
+    background: #ccc;
+    text-align: center;
+    margin: 5px 2em 15px 0;
+}
+
+.starterWizard__listImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.starterWizard__listImage img.no-image {
+    width: auto;
+    height: auto;
+    object-fit: none;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.starterWizard__list dl {
+    font-size: 0;
+    padding: 1em;
+    margin-bottom: 0;
+}
+
+.starterWizard__list dt {
+    display: inline-block;
+    width: 170px;
+    font-size: 14px;
+    line-height: 22px;
+    padding-right: 20px;
+}
+.starterWizard__list dd {
+    display: inline-block;
+    width: calc(100% - 170px);
+    font-size: 14px;
+    line-height: 22px;
+    padding-right: 20px;
+    vertical-align: top;
+}
+
+.starterWizard--mapCsvData .grid-view .table td.unmatched {
+    background: #FCEBEE !important;
+}
+
+.starterWizard--mapCsvData .grid-view .table tr:nth-child(odd) td.unmatched {
+    background: #FDDBDA !important;
+}
+
+.starterWizard--mapCsvData .grid-view .table tbody tr:hover td.unmatched {
+    background: #f4c2c1 !important;
+}
+
+.starterWizard--mapCsvData .grid-view .table td.unmatched select {
+    border: solid 2px #dd0000;
+}
+
+.starterWizard--mapCsvData .grid-view .table tr td.unmatched span.matched,
+.starterWizard--mapCsvData .grid-view .table tr td span.unmatched {
+    display: none;
+}
+
+.starterWizard--mapCsvData .grid-view .table tr td.unmatched span.unmatched {
+    display: block;
+}
+
+.starterWizard--mapCsvData .grid-view .table td span.matched {
+    color: #007878;
+    display: block;
+}
+
+.starterWizard--mapCsvData .grid-view .table td.unmatched span.unmatched {
+    color: #dd0000;
+}
+
+.starterWizard--mapCsvData .grid-view .table span.matched,
+.starterWizard--mapCsvData .grid-view .table span.unmatched {
+    text-align: center;
+    margin-top: 0.5em;
+    display: block;
+    font-weight: bold;
+}
+
+@media (max-width: 1023px) {
+    .starterWizard__listColumn:nth-child(4) {
+        text-align: center;
+        margin: 2em 0;
+    }
+
+    .starterWizard__list dt {
+        margin-top: 0.5em;
+    }
+
+    .starterWizard__list dd {
+        width: auto;
+        padding-right: 0;
+    }
+
+    .starterWizard__list dt,
+    .starterWizard__list dd {
+      display: block;
+    }
+}
+
+@media print {
+    .starterWizard__listItem {
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .starterWizard__listImage img {
+        object-position: left;
+    }
+
+    .starterWizard__listImage a[href]::after {
+        content: none;
+    }
+
+    .starterWizard__listColumn dd::after {
+        display: block;
+        content: ' ';
+    }
+
+    .starterWizard__list dt,
+    .starterWizard__list dd {
+        display: inline-block !important;
+    }
+
+    .starterWizard__list dt {
+        margin-top: 0;
+    }
+
+    .starterWizard__list dd {
+        width: calc(100% - 170px)
+    }
+}
