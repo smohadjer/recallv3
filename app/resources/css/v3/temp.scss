@@ -1,0 +1,121 @@
+
+/************ responder UI *************/
+.navbar {
+  padding: 0 0 0 15px;
+
+  @media (min-width: 768px) {
+    padding-right: 15px;
+  }
+}
+
+.navbar .navbar-toggle .icon-bar {
+  border-radius: 0;
+}
+
+.navbar-primary {
+  margin-bottom: 0;
+}
+
+.navbar .navbar-brand {
+  padding: 10px 0;
+  height: auto;
+
+  @media (min-width: 1200px) {
+    padding: 15px 0;
+  }
+}
+
+main > article {
+  padding: 0;
+}
+
+.starterWizard__header > h1, .starterWizard__header > h3 {
+  border-bottom: solid 1px #999;
+  margin: 0;
+  font-weight: 400;
+}
+
+a, a:focus {
+  text-decoration: none;
+}
+
+.starterWizard .btn {
+  padding: 0.5em 1em;
+  font-size: 14px;
+}
+
+.main__links {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  margin-bottom: 1rem;
+
+  @media (min-width: 768px) {
+    margin-bottom: 0;
+  }
+
+  > a.icon {
+    max-width: 45%;
+
+    &::before {
+      background-color: #007878;
+    }
+  }
+
+  > span {
+    max-width: 45%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+/****** responder navbar *****/
+.starterWizard__nav-responder {
+  background-color: white;
+  font-size: 16px;
+  margin-bottom: 2em;
+}
+
+.starterWizard__nav-responder li {
+  background: none;
+  padding-right: 0;
+}
+
+.starterWizard__nav-responder li.selected {
+  background: none;
+}
+
+.starterWizard__nav-responder li.selected a {
+  color: #333;
+  text-decoration: none;
+}
+
+.starterWizard__nav-responder li.selected a:hover {
+  text-decoration: none;
+  cursor: default;
+}
+
+.starterWizard__nav-responder li.selected a.icon::before {
+  background-color: #333;
+}
+
+.starterWizard__nav-responder li a {
+  padding: 0.5em 0.25em;
+  color: #007878;
+  font-weight: 500;
+}
+
+.starterWizard__nav-responder li:hover {
+  background: none;
+}
+
+.starterWizard__nav-responder li a:hover {
+  background: none;
+  text-decoration: underline;
+}
+
+.starterWizard__nav-responder li a.icon::before {
+  background-color: #007878;
+}
+

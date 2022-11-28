@@ -37,7 +37,6 @@
 	color: #fff;
 	font-size: 1em;
 	display: block;
-	font-weight: 500;
 }
 
 @media (min-width: 1024px) {
@@ -53,53 +52,5 @@
 	.starterWizard__nav li span {
 		padding: 0.75em 0;
 		display: inline-block;
-	}
-
-	/****** responder navbar *****/
-	.starterWizard__nav-responder {
-		background-color: white;
-		font-size: 16px;
-		margin-bottom: 2em;
-	}
-
-	.starterWizard__nav-responder li {
-		background: none;
-		padding-right: 0;
-	}
-
-	.starterWizard__nav-responder li.selected {
-		background: none;
-	}
-
-	.starterWizard__nav-responder li.selected a {
-		color: #333;
-		text-decoration: none;
-	}
-
-	.starterWizard__nav-responder li.selected a:hover {
-		text-decoration: none;
-		cursor: default;
-	}
-
-	.starterWizard__nav-responder li.selected a.icon::before {
-		background-color: #333;
-	}
-
-	.starterWizard__nav-responder li a {
-		padding: 0.5em 0.25em;
-		color: #007878;
-	}
-
-	.starterWizard__nav-responder li:hover {
-		background: none;
-	}
-
-	.starterWizard__nav-responder li a:hover {
-		background: none;
-		text-decoration: underline;
-	}
-
-	.starterWizard__nav-responder li a.icon::before {
-		background-color: #007878;
 	}
 }

@@ -1,0 +1,210 @@
+/* Add styles that should be loaded on all eventify pages */
+@font-face {
+  font-family: 'NotoSans';
+  font-style: normal;
+  font-weight: 300;
+  src: url(../fonts/NotoSans/NotoSans-Light.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'NotoSans';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/NotoSans/NotoSans-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'NotoSans';
+  font-style: normal;
+  font-weight: 500;
+  src: url(../fonts/NotoSans/NotoSans-Medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'NotoSans';
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/NotoSans/NotoSans-Bold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: NotoSansArabic;
+    src: url(../fonts/NotoSansArabic/NotoSansArabic-Light.ttf) format('truetype');
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: NotoSansArabic;
+    src: url(../fonts/NotoSansArabic/NotoSansArabic-Regular.ttf) format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: NotoSansArabic;
+    src: url(../fonts/NotoSansArabic/NotoSansArabic-Medium.ttf) format('truetype');
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: NotoSansArabic;
+    src: url(../fonts/NotoSansArabic/NotoSansArabic-Bold.ttf) format('truetype');
+    font-style: normal;
+    font-weight: 700;
+}
+
+[lang="fa"] body,
+[lang="fa"] h1,
+[lang="fa"] h2,
+[lang="fa"] h3,
+[lang="fa"] h4,
+[lang="fa"] h5,
+[lang="fa"] h6,
+[lang="fa"] textarea,
+[lang="fa"] option,
+[lang="fa"] input {
+    font-family: 'NotoSansArabic', 'NotoSans', 'Helvetica', 'Arial', sans-serif;
+}
+
+/* warning in case javascript is disabled, .noscript is for ie11 */
+noscript,
+.noscript {
+    background: #c00;
+    display: block;
+    color: #fff;
+    padding: 0.7em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.glyphicon--green {
+    color: #007878;
+}
+
+/* centering charts inside panels in scorecard */
+.panel-body--centered {
+    text-align: center;
+}
+
+.panel-body--overflow-x-auto {
+    overflow-x: auto;
+}
+
+.panel-body .chart-placeholder {
+    margin: 4em 1em;
+}
+
+/* fixing problem with long words running out of panel */
+.panel-body {
+    word-break: break-word;
+}
+
+.ril__warning {
+  border: solid 1px #c66;
+  padding: 1em 1em 1em 3em;
+  margin: 1em 0;
+  background: url('/images/error.svg') no-repeat 1em center #fbdfdf;
+}
+
+.ril__warning--success {
+    padding-left: 1em;
+    border: none;
+    background: #4caf50;
+    color: white;
+}
+
+/* taken from eventify */
+.ril__close {
+    padding: 0;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    float: right;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: .2;
+}
+
+.environmentBar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+    background-color: gold;
+    z-index: 1000;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding: 0 1em;
+}
+
+.environmentBar + noscript + .navbar,
+.environmentBar + div > .noscript, /* Chrome wraps div.noscript inside another div */
+.environmentBar + .noscript,
+.environmentBar + noscript {
+    margin-top: 35px;
+}
+
+@media print {
+    .environmentBar {
+        display: none;
+    }
+
+    .navbar {
+        margin-top: 0 !important;
+    }
+}
+
+.navbar-primary .navbar__count {
+    background: #daf2ef;
+    color: #036060;
+    display: inline-block;
+    min-width: 18px;
+    height: 18px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 18px;
+    border-radius: 9px;
+    position: relative;
+    top: -10px;
+    left: 3px;
+    font-size: 14px;
+}
+
+.view-product-information {
+  text-align: right;
+}
+
+.view-product-information .btn {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 18px;
+  background-color: #007878 !important;
+  color: #fff !important;
+}
+
+/* To left-align label of checkboxes and radio fields with the fields when label wraps */
+label.contains-checkbox-or-radio {
+    padding-left: 21px;
+    text-indent: -21px;
+}
+
+.align-middle {
+    vertical-align: middle !important;
+}
+
+.eventify__username {
+    max-width: none !important;
+    text-align: right;
+    margin: 0 0 1em;
+}

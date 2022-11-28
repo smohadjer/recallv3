@@ -1,0 +1,81 @@
+.ril--table {
+  &__meta {
+    .button-wrapper {
+      text-align: center;
+      margin: 1rem auto;
+
+      button {
+        border-radius: 0;
+        padding: 0.75rem 1rem;
+      }
+
+      @media (min-width: 768px) {
+        text-align: left;
+        margin: 0;
+      }
+    }
+
+    .summary-wrapper {
+      display: flex;
+      justify-content: space-between;
+
+      .summary {
+        @media (min-width: 768px) {
+          padding-left: 0.5rem;
+          border-left: solid 1px #999;
+          margin-left: 0.5rem;
+        }
+      }
+    }
+
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+  
+      &--bottom {
+        align-items: flex-start;
+      }
+    }
+  }
+
+  .table-wrapper {
+    overflow-x: auto;
+    margin: 0.5em 0;
+  }
+
+  table {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-spacing: 0;
+    margin-bottom: 2px; /* to fix chrome/firefox bug showing a vertical scrollbar at higher resolutions */
+    border: solid 1px #ccc;
+    border-bottom: 0;
+  }
+  
+  th, td {
+    padding: 5px;
+    border: solid 1px #ccc;
+    border-left: 0;
+    border-top: 0;
+  }
+  
+  th {
+    white-space: nowrap;
+    background: #ddd;
+  }
+  
+  td {
+    vertical-align: top;
+    background: white;
+
+    ul {
+      min-width: 250px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+  }  
+}
+

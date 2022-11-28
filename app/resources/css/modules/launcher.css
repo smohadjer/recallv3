@@ -3,6 +3,11 @@
     margin-right: 15px;
 }
 
+.starterWizard .table-wrapper {
+    overflow-x: auto;
+}
+
+
 @media screen and (min-width: 768px) {
     .starterWizard p,
     .starterWizard li {
@@ -39,10 +44,9 @@
 .starterWizard__header > h3 {
 	text-align: center;
 	padding-bottom: 0.25em;
-	border-bottom: solid 1px #999;
-	margin: 0;
+	border-bottom: solid 1px #333;
+	margin: 1em 0 0;
     font-size: 24px;
-    font-weight: 400;
 }
 
 .starterWizard__header > div {
@@ -96,12 +100,18 @@
 	border: 0;
 	display: inline-block;
 	text-decoration: none;
-	padding: 0.5em 1em;
+	padding: 0.5em 0.75em 0.65em;
 	background: #007878;
+	border-radius: 0.25em;
 	color: white;
-	font-size: 14px;
+	font-size: 13px;
 	line-height: 1;
 	cursor: pointer;
+}
+
+.starterWizard .btn .glyphicon {
+    top: 2px;
+    margin-right: 5px;
 }
 
 .starterWizard td .btn {
@@ -283,6 +293,15 @@
         color: #007878;
         box-shadow: none;
     }
+
+    .starterWizard__listColumn .btn span.glyphicon {
+        font-size: 15px;
+        margin: 0;
+    }
+}
+
+.starterWizard__listColumn .btn .glyphicon {
+    margin-right: 10px;
 }
 
 .starterWizard__listImage {

@@ -1,0 +1,143 @@
+@media print {
+    .html--event-items body {
+        margin: 0;
+    }
+
+    .html--event-items body > .container-fluid {
+        min-height: 0;
+        padding: 1em;
+    }
+
+    .html--event-items .page-footer {
+        padding: 0;
+    }
+
+    .html--event-items .event-info-row {
+        margin: 2em 0;
+    }
+
+    .html--event-items .event-info-row > div {
+        width: 100%;
+        padding-left: 0;
+        font-weight: bold;
+    }
+
+    .html--event-items .event-info-row .event-id {
+        text-align: left;
+    }
+
+    .html--event-items .footer-copyright .pull-right,
+    .html--event-items .card.page-footer > .container,
+    .html--event-items .row.breadcrumbs,
+    .html--event-items .row.verified-message-row,
+    .html--event-items .view-product-information {
+        display: none;
+    }
+
+    .html--event-items h3, .html--event-items .h3 {
+        font-size: inherit;
+        margin: 1em;
+    }
+
+    .html--event-items .tab-content .panel-heading {
+        display: none !important;
+    }
+
+    .html--event-items .glyphicon-home,
+    .html--event-items .fa.fa-info {
+        display: none !important;
+    }
+
+    .html--event-items .tab-content #event-tab-tab2,
+    .html--event-items .tab-content #event-tab-tab3,
+    .html--event-items .panel-default .kv-panel-before,
+    .html--event-items .panel-default .kv-panel-after,
+    .html--event-items .panel-default .panel-footer,
+    .html--event-items .panel-default .rc-handle-container,
+    .html--event-items .tab-content #event-tab-tab0 .panel-default + .panel-default,
+    .html--event-items .tab-content #event-tab-tab0 .panel-default + .col-xs-12 {
+        display: none;
+    }
+
+    .html--event-items .tab-content .panel-body {
+        padding: 0;
+    }
+
+    .html--event-items .tab-content .panel-body .row .col-sm-2:nth-child(odd) p {
+        margin-bottom: 0;
+    }
+
+    .html--event-items .tab-content .h4.visible-print-block {
+        display: none !important;
+    }
+
+    .html--event-items #event-tab-container > .tab-content {
+        padding: 0;
+    }
+
+    .html--event-items .kv-grid-container {
+        overflow-x: hidden;
+    }
+
+    .html--event-items .kv-grid-container table th {
+        vertical-align: top !important;
+        white-space: break-spaces;
+    }
+
+    /* white-space: break-spaces is not supported in ie11 */
+    .html--event-items.ie .kv-grid-container table th {
+        white-space: pre-wrap;
+    }
+
+
+    .html--event-items .kv-grid-container table th[data-col-seq="10"],
+    .html--event-items .kv-grid-container table td[data-col-seq="10"],
+    .html--event-items .kv-grid-container table th[data-col-seq="15"],
+    .html--event-items .kv-grid-container table td[data-col-seq="15"],
+    .html--event-items .kv-grid-container table th[data-col-seq="16"],
+    .html--event-items .kv-grid-container table td[data-col-seq="16"],
+    .html--event-items .kv-grid-container table th[data-col-seq="17"],
+    .html--event-items .kv-grid-container table td[data-col-seq="17"],
+    .html--event-items .kv-grid-container table th[data-col-seq="18"],
+    .html--event-items .kv-grid-container table td[data-col-seq="18"]
+    {
+        display: none;
+    }
+
+    /* Qty Removed and Comments column should be blank */
+    .html--event-items .kv-grid-container table td[data-col-seq="12"],
+    .html--event-items .kv-grid-container table td[data-col-seq="14"] {
+        opacity: 0;
+    }
+
+    .html--event-items .kv-grid-container table td img {
+        max-width: 100px;
+    }
+
+    /* eventify's css rules render href value of links on print which we don't wish here */
+    .html--event-items .kv-grid-container table td a[href]:after {
+        content: none !important;
+    }
+
+    /* for meta data above table in portrait mode */
+    .html--event-items .text-nowrap {
+        white-space: normal;
+    }
+
+    .col-sm-2--print {
+        position: relative;
+        min-height: 1px;
+        padding-left: 15px;
+        width: 16.66666667%;
+        float: left;
+        padding-right: 0;
+    }
+
+    /* force page to be printed in landscape mode in browsers supporting @page size */
+    @page event-items {
+        size: landscape;
+    }
+    .html--event-items {
+      page: event-items;
+    }
+}

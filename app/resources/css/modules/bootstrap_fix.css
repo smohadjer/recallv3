@@ -1,0 +1,35 @@
+/* These rules are needed on pages loading bootstrap css */
+/* This file can be removed whenever we stop using bootstrap */
+
+.starterWizard__form input.hasDatepicker {
+	font-size: 1em;
+	color: black;
+	font-weight: 400;
+}
+
+.starterWizard__form .form-control {
+	font-size: 1em;
+	color: black;
+	font-weight: 400;
+	height: auto;
+}
+
+.starterWizard__form select.form-control {
+	display: inline-block;
+}
+
+.starterWizard__form .control-label {
+	margin-bottom: 0;
+}
+
+.starterWizard__form .row > .column input[type=file] {
+	display: inline-block;
+}
+
+.starterWizard__form  .ql-container {
+    padding: 0;
+}
+
+.starterWizard__form summary {
+    display: list-item;
+}

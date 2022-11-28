@@ -1,9 +1,0 @@
-@media print {
-  .environmentBar {
-      display: none;
-  }
-
-  .navbar {
-      margin-top: 0 !important;
-  }
-}

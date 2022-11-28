@@ -1,0 +1,299 @@
+.reset-material .row {
+  margin: 0;
+  clear: both;
+  margin-top: 1.5em;
+}
+.reset-material .row::before,
+.reset-material .row::after {
+  content: none;
+}
+.reset-material .btn {
+  border: 0;
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.5em 0.75em 0.65em;
+  background: #007878;
+  border-radius: 0.25em;
+  color: white;
+  font-size: 13px;
+  line-height: 1;
+  cursor: pointer;
+}
+.reset-material .btn.btn--large, .reset-material .row--buttons .btn {
+  font-size: 18px;
+  padding: 12px 20px;
+}
+.reset-material .btn .glyphicon {
+  top: 2px;
+  margin-right: 5px;
+}
+.reset-material td .btn {
+  margin-bottom: 3px;
+  /* so when buttons wrap below each other they don't touch */
+}
+.reset-material .btn:hover {
+  background: #027d72;
+}
+.reset-material .btn[disabled] {
+  background: #ccc !important;
+  cursor: default !important;
+}
+.reset-material .btn:not(.btn-raised):not(.btn-link):hover, .reset-material .input-group-btn .btn:not(.btn-raised):not(.btn-link):hover, .reset-material .btn:not(.btn-raised):not(.btn-link):focus, .reset-material .input-group-btn .btn:not(.btn-raised):not(.btn-link):focus {
+  background: #027d72;
+}
+
+.reset-material {
+  /* help-blocks render even when they are empty and alter spacing in layout  so we only show them when there is an error displayed in them */
+  /* for mobile */
+  /* special grid for centered forms */
+}
+.reset-material .eventResponse__form .help-block {
+  display: none;
+}
+.reset-material .eventResponse__form .has-error input,
+.reset-material .eventResponse__form .has-error textarea {
+  border: solid 1px #c00;
+}
+.reset-material .eventResponse__form .has-error .help-block {
+  display: block;
+  color: #c00;
+  margin-top: 0.75em;
+  font-weight: 500;
+}
+.reset-material .eventResponse__form .has-error .help-block .icon--error {
+  vertical-align: text-bottom;
+  margin-right: 0.5em;
+}
+.reset-material .eventResponse__form .form-group {
+  margin-bottom: 0;
+}
+.reset-material .eventResponse__form > fieldset {
+  border: 1px solid #007878;
+  border-radius: 0.75em;
+  padding: 1em 1em 2em;
+  background: #daf2ef;
+  margin-bottom: 2em;
+}
+.reset-material .eventResponse__form > fieldset summary {
+  font-size: 1.3em;
+  font-weight: 600;
+  cursor: pointer;
+  outline: 0;
+}
+.reset-material .eventResponse__form fieldset > h3 {
+  margin-bottom: 0;
+}
+.reset-material .eventResponse__form fieldset > h3 + p {
+  margin-top: 0;
+}
+.reset-material .eventResponse__form .legend {
+  text-align: right;
+  font-size: 1em;
+  border: 0;
+  margin: 0;
+  max-width: none;
+}
+.reset-material .eventResponse__form .legend p {
+  margin: 0;
+}
+.reset-material .eventResponse__form input,
+.reset-material .eventResponse__form textarea {
+  border: none;
+  padding: 0.25em 0.5em;
+  line-height: 1.25em;
+  font-size: 1em;
+}
+.reset-material .eventResponse__form input[type=file] {
+  padding: 0;
+}
+.reset-material .eventResponse__form select {
+  border: none;
+  padding: 0.25em 0.2em;
+  font-size: 1em;
+}
+@media (max-width: 767px) {
+  .reset-material .eventResponse__form input,
+.reset-material .eventResponse__form select {
+    width: 100%;
+    margin-top: 3px;
+  }
+}
+.reset-material .eventResponse__form label {
+  padding-right: 0.5em;
+  font-weight: normal;
+}
+.reset-material .eventResponse__form input + .required {
+  margin-left: 0.25em;
+}
+@media (min-width: 768px) {
+  .reset-material .eventResponse__form fieldset .row:not(.row--one-column) {
+    display: flex;
+  }
+  .reset-material .eventResponse__form .row:not(.row--one-column) > .column:first-child {
+    flex-basis: 25%;
+    max-width: 200px;
+  }
+  .reset-material .eventResponse__form .row > .column + .column {
+    flex-basis: 75%;
+    max-width: 400px;
+    /* allows 70 characters in fields */
+  }
+  .reset-material .eventResponse__form .row.row--fullsize > .column + .column {
+    max-width: none;
+  }
+  .reset-material .eventResponse__form .row > .column input,
+.reset-material .eventResponse__form .row > .column select,
+.reset-material .eventResponse__form .row > .column textarea {
+    width: 100%;
+  }
+  .reset-material .eventResponse__form .row.row--one-column > .column input,
+.reset-material .eventResponse__form .row.row--one-column > .column select,
+.reset-material .eventResponse__form .row.row--one-column > .column textarea {
+    width: auto;
+    min-width: 320px;
+  }
+}
+.reset-material .eventResponse__form .row > .column input[type=file],
+.reset-material .eventResponse__form .row > .column input[type=radio],
+.reset-material .eventResponse__form .row > .column input[type=checkbox],
+.reset-material .eventResponse__form .row > .column input[type=submit] {
+  width: auto;
+  min-width: 0px;
+  /* unset doesn't work in IE11 */
+}
+.reset-material .eventResponse__form .row > .column input[type=checkbox] {
+  margin-right: 5px;
+}
+.reset-material .eventResponse__form .required .control-label::after {
+  content: " *";
+  white-space: nowrap;
+}
+.reset-material .eventResponse__form .row--buttons.row--split-buttons {
+  justify-content: space-between;
+  padding-top: 0;
+}
+.reset-material .eventResponse__form .row--buttons {
+  padding-top: 1.5em;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.2em;
+}
+.reset-material .eventResponse__form .row--buttons::after {
+  content: none;
+}
+.reset-material .eventResponse__form .error {
+  color: #dd0000;
+}
+@media (min-width: 768px) {
+  .reset-material .eventResponse__form--center .row:not(.row--one-column) > .column:first-child {
+    flex-basis: 50%;
+    max-width: none;
+  }
+  .reset-material .eventResponse__form--center .row > .column + .column {
+    flex-basis: 50%;
+    max-width: none;
+  }
+}
+@media (min-width: 1024px) {
+  .reset-material .starterWizard__narrow,
+.reset-material .eventResponse__form--center fieldset {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.reset-material {
+  font-family: 'NotoSans', Helvetica, Arial, sans-serif;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  margin: 0;
+  color: #000;
+}
+.reset-material label.control-label {
+  box-sizing: border-box;
+  color: #000;
+  display: inline-block;
+  margin: 0;
+  line-height: 1.42857143;
+  font-size: 14px;
+}
+.reset-material .form-control {
+  margin-bottom: 0;
+  height: auto;
+  color: #000;
+  font-size: 1em;
+}
+.reset-material .has-error .help-block,
+.reset-material .has-error .control-label,
+.reset-material .has-error .radio,
+.reset-material .has-error .checkbox,
+.reset-material .has-error .radio-inline,
+.reset-material .has-error .checkbox-inline,
+.reset-material .has-error.radio label,
+.reset-material .has-error.checkbox label,
+.reset-material .has-error.radio-inline label,
+.reset-material .has-error.checkbox-inline label {
+  color: #dd0000;
+}
+.reset-material .form-control, .reset-material .form-group .form-control {
+  background: #fff none;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+}
+.reset-material .form-control[disabled], .reset-material .form-group .form-control[disabled], .reset-material fieldset[disabled] .form-control, .reset-material fieldset[disabled] .form-group .form-control {
+  background-image: none;
+  border-bottom: 1px dotted #D2D2D2;
+}
+.reset-material .form-control[disabled], .reset-material .form-control[readonly], .reset-material fieldset[disabled] .form-control {
+  background-color: #eee;
+  opacity: 1;
+}
+.reset-material .checkbox label, .reset-material .radio label, .reset-material label {
+  font-size: 1em;
+  color: #000;
+}
+.reset-material .has-error .help-block {
+  font-size: 1em;
+}
+
+.reset-material .eventResponse__form > fieldset {
+  margin-bottom: 0;
+}
+.reset-material .eventResponse__form .row--buttons {
+  padding-top: 0;
+}
+.reset-material .eventResponse__form .form-control::placeholder {
+  font-size: 14px;
+}
+.reset-material .eventResponse__form input:focus, .reset-material .eventResponse__form textarea:focus, .reset-material .eventResponse__form select:focus {
+  outline: #007878 solid 2px;
+}
+.reset-material .hint-block {
+  display: block;
+  margin-top: 5px;
+  color: #333;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.btn.btn-raised:not(.btn-link):hover.btn-primary,
+.input-group-btn .btn.btn-raised:not(.btn-link):hover.btn-primary,
+.btn-group-raised .btn:not(.btn-link):hover.btn-primary,
+.btn-group-raised .input-group-btn .btn:not(.btn-link):hover.btn-primary,
+.btn.btn-raised:not(.btn-link):focus.btn-primary,
+.input-group-btn .btn.btn-raised:not(.btn-link):focus.btn-primary,
+.btn-group-raised .btn:not(.btn-link):focus.btn-primary,
+.btn-group-raised .input-group-btn .btn:not(.btn-link):focus.btn-primary,
+.btn.btn-raised:not(.btn-link).active.btn-primary,
+.input-group-btn .btn.btn-raised:not(.btn-link).active.btn-primary,
+.btn-group-raised .btn:not(.btn-link).active.btn-primary,
+.btn-group-raised .input-group-btn .btn:not(.btn-link).active.btn-primary,
+.btn.btn-raised:not(.btn-link):active.btn-primary,
+.input-group-btn .btn.btn-raised:not(.btn-link):active.btn-primary,
+.btn-group-raised .btn:not(.btn-link):active.btn-primary,
+.btn-group-raised .input-group-btn .btn:not(.btn-link):active.btn-primary {
+  background-color: #036060;
+}

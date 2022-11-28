@@ -1,0 +1,60 @@
+@media (min-width: 768px) {
+	.ril--managementGroup .ril__content {
+		display: flex;
+		align-items: flex-start;
+        flex-wrap: wrap;
+	}
+
+    .ril--managementGroup .ril__content h1 {
+        flex-basis: 100%;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .ril__groupList {
+		background: #fff;
+		padding: 1em;
+		display: inline-block;
+		margin-right: 2em;
+    }
+}
+
+.ril__groupList table {
+    border-spacing: 0;
+}
+
+.ril__groupList th,
+.ril__groupList td {
+    text-align: left;
+}
+
+.ril__groupList th {
+    border-bottom: solid 1px #007878;
+    padding-bottom: 0.25em;
+}
+
+.ril__groupList td {
+    padding-top: 0.5em;
+}
+
+.ril__groupList td:first-child {
+    padding-right: 2em;
+}
+
+.ril__groupForms {
+	flex-grow: 2;
+}
+
+@media (max-width: 767px) {
+	.ril__groupForms {
+		margin-top: 1em;
+	}
+}
+
+.ril__groupForms h3 {
+    font-size: 1em;
+}
+
+.ril__groupForms .starterWizard__form .row.row--buttons {
+    margin-top: 0;
+}

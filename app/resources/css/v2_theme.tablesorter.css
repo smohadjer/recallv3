@@ -1,0 +1,41 @@
+/* header */
+.tablesorter-default {
+  font-size: 1em;
+  line-height: 1;
+  font-family: 'NotoSans', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 300;
+}
+
+.tablesorter-default td {
+  background-color: #fff;
+}
+
+.tablesorter-default th {
+  border: 0;
+  outline: none;
+}
+
+.tablesorter-default th.sorter-false {
+    padding-left: 0.7em;
+}
+
+.tablesorter-default .header,
+.tablesorter-default .tablesorter-header {
+  background-image: url(data:image/gif;base64,R0lGODlhFQAJAIAAAP///////yH5BAEAAAEALAAAAAAVAAkAAAIXjI+AywnaYnhUMoqt3gZXPmVg94yJVQAAOw==);
+	background-position: center left;
+  font-weight: normal;
+  padding: 1em 0.5em 1em 1.5em;
+  border-bottom-width: 0;
+}
+.tablesorter-default thead .headerSortUp,
+.tablesorter-default thead .tablesorter-headerSortUp,
+.tablesorter-default thead .tablesorter-headerAsc {
+  background-image: url(data:image/gif;base64,R0lGODlhFQAEAIAAAP///////yH5BAEAAAEALAAAAAAVAAQAAAINjI8Bya2wnINUMopZAQA7);
+  border-bottom-width: 0;
+}
+.tablesorter-default thead .headerSortDown,
+.tablesorter-default thead .tablesorter-headerSortDown,
+.tablesorter-default thead .tablesorter-headerDesc {
+  background-image: url(data:image/gif;base64,R0lGODlhFQAEAIAAAP///////yH5BAEAAAEALAAAAAAVAAQAAAINjB+gC+jP2ptn0WskLQA7);
+  border-bottom-width: 0;
+}

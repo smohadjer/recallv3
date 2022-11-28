@@ -1,0 +1,78 @@
+/* Styles for following pages:
+   /admin
+   /admin/update
+   /admin/create
+   /admin/upload-users
+   /admin/edit
+*/
+
+/************** Admin Console ****************/
+.ril__console {
+	position: relative;
+	margin: 0;
+	padding: 1em;
+	font-weight: 500;
+	font-size: 1em;
+	background: #fff;
+}
+
+.ril__console + .ril__content {
+	margin-top: 20px;
+}
+
+.ril__console a,
+.ril__console span {
+	white-space: nowrap;
+	line-height: 2;
+	margin: 0 1em 0 0;
+}
+
+.ril__console a {
+	text-decoration: underline;
+}
+
+.ril__console .close {
+	position: absolute;
+	top: 0.5em;
+	right: 0.5em;
+	padding: 0.5em;
+}
+
+@media (min-width: 768px) {
+  .ril__console {
+	font-size: 1.2em;
+	display: inline-block;
+	padding: 0.6em 0.5em 0.75em 0.5em;
+	margin-top: 0.5em;
+  }
+
+  .ril__console a {
+  	margin: 0 0.5em;
+  }
+
+  .ril__console span {
+  	margin: 0 0.5em;
+  }
+}
+
+/******************* /admin/upload-users ********************/
+
+.ril__csvError {
+    margin-bottom: 1em;
+}
+
+.ril__csvError .error {
+    background: white;
+    padding: 0.5em;
+    color: #dd0000;
+    font-family: monospace;
+    margin: 0.2em 0 0;
+}
+
+.uploadUsers__list {
+  margin-bottom: 2em;
+}
+
+.uploadUsers__list li + li {
+  margin-top: 0.5em;
+}

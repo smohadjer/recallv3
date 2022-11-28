@@ -1,11 +1,21 @@
 @charset "UTF-8";
-@import "generic/settings";
-@import "generic/global";
-@import "generic/icons";
-@import "modules/env_bar";
+@import "main";
+@import "rtl";
+@import "modules/global";
+@import "modules/navbar";
+@import "modules/form";
+@import "modules/grid_view";
+@import "modules/admin";
+@import "modules/manage_groups";
+@import "modules/launcher_review";
 @import "modules/launcher";
 @import "modules/launcher_nav";
-@import "modules/navbar";
-@import "modules/table";
-@import "temp";
-@import "print";
+@import "modules/notification";
+@import "modules/temp";
+@import "modules/quill";
+@import "modules/modal";
+
+/* new styles for responder prototype */
+@import "v3/icons";
+@import "v3/temp";
+@import "v3/table";

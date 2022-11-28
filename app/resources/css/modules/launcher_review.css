@@ -1,0 +1,54 @@
+.starterWizard__review .ril__warning + header,
+.starterWizard__review .error + header,
+.starterWizard__review table + header {
+	margin-top: 2em;
+}
+
+.starterWizard__review header h3 {
+	font-size: 1.2em;
+	margin: 0;
+	font-weight: 500;
+}
+
+.starterWizard__review header h3 span {
+	font-size: small;
+	margin-right: 5px;
+}
+
+.starterWizard__review .error {
+	color: #dd0000;
+	margin: 0;
+}
+
+.starterWizard__review table {
+	margin-top: 0.5em;
+	width: 100%;
+	background: #fff;
+}
+
+.starterWizard__review table tr td {
+	padding: 0.5em 1em 0.5em 0.5em;
+	border-bottom: solid 1px #ccc;
+	vertical-align: top;
+	word-break: break-word;
+}
+
+.starterWizard__review table tr td ul {
+	margin-left: 0;
+	padding-left: 0;
+	padding-inline-start: 40px;
+}
+
+.starterWizard__review table tr td > p {
+	margin: 0;
+}
+
+.starterWizard__review table tr td > p + p {
+	margin-top: 1em;
+}
+
+@media (min-width: 768px) {
+	.starterWizard__review table tr td:first-child {
+		width: 25%;
+	}
+}

@@ -1,0 +1,36 @@
+.vertical-center {
+    display: flex;
+    align-items: center;
+}
+
+
+/* Rules in this file will be moved to appropriate modules by Saeid. */
+.c3-chart-arc text {
+    display: none;
+}
+
+/* End */
+
+/* Used in index-b2b.php to display colored status dots */
+
+.status-dot {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.status-dot.green {
+    background-color: rgb(96, 176, 68);
+}
+
+.status-dot.yellow {
+    background-color: gold;
+}
+
+.status-dot.red {
+    background-color: #ff0000;
+}
+
+/* End */

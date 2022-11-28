@@ -1,0 +1,192 @@
+.grid-view {
+    /* so that wide tables don't break layout at lower resolutions */
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+h1 + .grid-view {
+    margin-top: 0;
+}
+
+/* to force display of scrollbar on Macs */
+.starterWizard--mapCsvData .grid-view::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+.starterWizard--mapCsvData .grid-view::-webkit-scrollbar:vertical {
+    width: 11px;
+}
+.starterWizard--mapCsvData .grid-view::-webkit-scrollbar:horizontal {
+    height: 11px;
+}
+.starterWizard--mapCsvData .grid-view::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 2px solid white; /* should match background, can't be transparent */
+    background-color: rgba(0, 0, 0, .5);
+}
+.starterWizard--mapCsvData .grid-view::-webkit-scrollbar-track {
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.grid-view .summary {
+    text-align: right;
+    line-height: 2;
+}
+
+[dir="rtl"] .grid-view .summary {
+    text-align: left;
+}
+
+.grid-view .filters .form-control {
+    width: 100%;
+    border: solid 1px #ccc;
+    min-width: 0px; /* unset doesn't work in IE11 */
+    min-height: 32px;
+    border-radius: 0;
+    box-shadow: none;
+    height: auto;
+    font-size: 1.2rem;
+    padding: 0 6px;
+}
+
+.grid-view .table {
+    width: 100%;
+    font-size: 12px;
+}
+
+.grid-view .table th {
+    background-color: #007878;
+    font-weight: normal;
+    border-collapse: collapse;
+    border-left: solid 1px #ccc;
+    border-bottom: 0;
+    padding: 0.75em 0.5em;
+    color: white;
+    vertical-align: middle;
+}
+
+.grid-view .table th a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-repeat: no-repeat;
+    background-position: center left;
+    padding-left: 1.5em;
+    margin-left: -0.5em;
+    background-image: url(data:image/gif;base64,R0lGODlhFQAJAIAAAP///////yH5BAEAAAEALAAAAAAVAAkAAAIXjI+AywnaYnhUMoqt3gZXPmVg94yJVQAAOw==);
+}
+
+[dir="rtl"] .grid-view .table th a {
+    background-position: center right;
+    padding-right: 1.5em;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.grid-view .table th a.desc {
+    background-image: url(data:image/gif;base64,R0lGODlhFQAEAIAAAP///////yH5BAEAAAEALAAAAAAVAAQAAAINjB+gC+jP2ptn0WskLQA7);
+}
+
+.grid-view .table th a.asc {
+  background-image: url(data:image/gif;base64,R0lGODlhFQAEAIAAAP///////yH5BAEAAAEALAAAAAAVAAQAAAINjI8Bya2wnINUMopZAQA7);
+}
+
+.grid-view .table td {
+    background: #fff;
+    border-bottom: solid 1px #ccc;
+    border-right: solid 1px #ccc;
+    border-collapse: collapse;
+    padding: 0.75em 0.5em;
+}
+
+.grid-view .table tr.filters td {
+    padding: 0.5em;
+}
+
+.grid-view .table td.email,
+.grid-view .table td.username {
+    word-break: break-word;
+    min-width: 115px;
+}
+
+.grid-view .table tbody tr:hover td {
+    background: #eee !important;
+}
+
+.grid-view .table tr:nth-child(odd) td {
+    background: #daf2ef;
+}
+
+fieldset .grid-view .table tbody tr:hover td {
+    background: #daf2ef !important;
+}
+
+fieldset .grid-view .table tr:nth-child(odd) td {
+    background: #eee;
+}
+
+.grid-view .table td:last-child {
+    border-right-width: 0;
+}
+
+.grid-view .table td:last-child {
+    word-break: normal;
+}
+
+.grid-view .table .action-column {
+    white-space: nowrap;
+}
+
+.grid-view .actionButtons {
+    white-space: nowrap;
+}
+
+.grid-view  .actionButtons a {
+    padding: 12px;
+}
+
+.grid-view .bold {
+    font-weight: 700;
+}
+
+.grid-view--message-center .table {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.grid-view--message-center td:first-child,
+.grid-view--message-center td:nth-child(3) {
+    width: 100px;
+}
+
+.grid-view .table-events-list td .glyphicon {
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+.grid-view .table-events-list td a + a {
+    margin-left: 15px;
+}
+
+/* to avoid icon and text of a link show in different lines */
+.grid-view .table-events-list td:last-child a {
+    white-space: nowrap;
+}
+
+.grid-view .table-events-list td .glyphicon-eye-open {
+    top: 3px;
+}
+
+[dir="rtl"] .grid-view .table-events-list td .glyphicon {
+    margin-right: 0;
+    margin-left: 5px;
+}
+
+.grid-view .table-events-list td .glyphicon-print {
+  top: 2px;
+}
+
+[dir="rtl"] .grid-view .table-events-list td.actions a:first-child {
+    margin-right: 0 !important;
+    margin-left: 15px;
+}

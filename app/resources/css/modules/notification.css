@@ -1,0 +1,139 @@
+.ril__listTable {
+  overflow-x: auto;
+  margin-top: 0.5em;
+}
+
+.ril__listTable > table {
+  background: #e9e9e9;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-spacing: 0;
+  margin-bottom: 2px; /* to fix chrome/firefox bug showing a vertical scrollbar at higher resolutions */
+}
+.ril__listTable > table .hiddenItem {
+    display: none;
+}
+
+.ril__listTable > table td,
+.ril__listTable > table th {
+  text-align: left;
+  border-bottom: solid 1px #ccc;
+  border-collapse: collapse;
+  padding: 0.5em;
+  border-right: solid 1px #ccc;
+}
+
+.ril__listTable > table tr:nth-child(odd) td {
+    background: #eee;
+}
+
+.ril__listTable > table tbody tr:hover td {
+    background: #daf2ef !important;
+}
+
+/* hide false and true text */
+.ril__listTable > table td.false,
+.ril__listTable > table td.true {
+  font-size: 0;
+  color: #e9e9e9;
+}
+
+/* show checkmark instead of true */
+.ril__listTable > table td.true::before {
+  content:'\2713';
+  display: block;
+  color: #007878;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 8px;
+}
+
+.ril__listTable > table tr.target td, /* for Chrome since :target doesn't work in Chrome */
+.ril__listTable > table tr:target td {
+  background-color: #c9c9c9;
+}
+
+.ril__listTable > table th {
+  color: #fff;
+  background-color: #007878;
+}
+
+.ril__listTable > table th:last-child,
+.ril__listTable > table td:last-child {
+  border-right-width: 0;
+}
+
+.ril__listTable > table td.email {
+    word-break: break-word;
+    min-width: 150px;
+}
+
+.ccNotification__quickSelect {
+    margin-left: 10px;
+}
+
+.ccNotification__quickSelect select {
+    min-width: 0px; /* unset doesn't work in IE11 */
+}
+
+.ccNotification__quickSelect label {
+    font-weight: bold;
+    margin-right: 2px;
+}
+
+#ccNotification__selectAll {
+    margin-right: 10px;
+}
+
+#ccNotification__counter {
+    float: right;
+    margin-top: 0.25em;
+}
+
+#ccNotification__counter #ccNotification__showSelected {
+    margin-left: 10px;
+}
+
+#ccNotification__counter #ccNotification__showSelected + label {
+    padding-right: 0;
+}
+
+#ccNotification__table tr th:first-child {
+    padding-left: 10px;
+}
+
+#ccNotification__table td.username {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.ccNotification__controls {
+    display: none;
+}
+
+.html--js .ccNotification__controls {
+    display: block;
+    margin-top: 1em;
+}
+
+.ccNotification__controls button {
+    background: #007878;
+    border-radius: 0.25em;
+    border: 0;
+    color: #fff;
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+.ccNotification__controls button:hover {
+    background: #036060;
+}
+
+@media (min-width: 1024px) {
+    .ccNotification__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+}

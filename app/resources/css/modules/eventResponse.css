@@ -1,0 +1,79 @@
+.not-set {
+    color: #333;
+}
+
+a.event-response-link {
+    padding: 0 2px;
+    border-bottom: dashed 1px #007878;
+    line-height: 1.6em;
+}
+
+a:focus.event-response-link {
+    display: block;
+}
+
+a:hover.event-response-link {
+    text-decoration: none;
+    border-bottom: solid 1px #007878;
+}
+
+.event-response-empty {
+    border-bottom: dashed 1px #007878;
+    font-style: italic;
+}
+
+a:hover.event-response-empty {
+    text-decoration: none;
+    border-bottom: solid 1px #007878;
+    font-style: italic;
+}
+
+a:focus.event-response-link {
+    border: 2px solid #007878;
+    outline: none;
+    text-decoration: none;
+}
+
+a.event-response-qty-returned-empty {
+    color: #DD1144;
+    border-bottom: dashed 1px #DD1144;
+    font-style: italic;
+}
+
+a:hover.event-response-link.event-response-qty-returned-empty {
+    color: #DD1144;
+    border-bottom: solid 1px #DD1144;
+    text-decoration: none;
+}
+
+a:focus.event-response-link.event-response-qty-returned-empty {
+    color: #DD1144;
+    border: 2px solid #DD1144;
+    outline: none;
+    text-decoration: none;
+}
+
+.eventResponse__form textarea {
+    resize: vertical;
+}
+
+.row--highlighted {
+    background: #daf2ef !important;
+}
+
+.btn.btn-raised:not(.btn-link):focus,
+a:focus, button:focus,
+a.btn:focus, button.btn:focus,
+input[name="filename"]:focus {
+    outline: #007878 solid 2px;
+}
+
+.panel > .table-responsive > .table-bordered > tbody > tr > td:first-child {
+    border-left: 15px solid transparent;
+}
+
+.certify-response-tasks-completion label {
+    font-size: 14px;
+    font-weight: 300;
+    color: #333;
+}

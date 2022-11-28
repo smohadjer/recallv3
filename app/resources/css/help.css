@@ -1,0 +1,128 @@
+.starterWizard--guide .toc {
+    padding: 20px;
+    background-color: #eee;
+    margin-top: 1em;
+}
+
+.starterWizard--guide .toc ul {
+    margin-bottom: 0;
+}
+
+.starterWizard--guide .responsive {
+    width: 100%;
+    height: auto;
+}
+
+.starterWizard--guide .footnote {
+    background: #F8F9FA;
+    padding: 10px;
+    margin: 0 0 10px;
+}
+
+@media (min-width: 1024px) {
+    .starterWizard--guide .starterWizard__content {
+        display: flex;
+    }
+}
+
+.starterWizard--guide .starterWizard__content > aside {
+    font-size: 18px;
+    background: #eee;
+    padding: 0 20px 20px 0;
+}
+
+.starterWizard--guide .starterWizard__content > aside .glyphicon {
+    margin-left: -3px;
+    color: #333;
+    font-size: 14px;
+    top: 0;
+}
+
+@media (min-width: 1024px) {
+  .starterWizard--guide .starterWizard__content > aside {
+    min-width: 320px;
+  }
+}
+
+.starterWizard--guide .starterWizard__content > aside ul {
+    padding: 0;
+}
+
+.starterWizard--guide .starterWizard__content > aside li {
+    margin-top: 0.5em;
+    list-style-type: none;
+    font-weight: 500;
+}
+
+.starterWizard--guide .starterWizard__content > aside li a {
+  text-decoration: underline;
+}
+
+.starterWizard--guide .starterWizard__content > article {
+    padding: 20px;
+    background-color: white;
+}
+
+@media (min-width: 1200px) {
+  .starterWizard--guide .starterWizard__content > article {
+    width: 1024px;
+  }
+}
+
+.starterWizard--guide .starterWizard__content h1 {
+    margin-top: 0.5rem;
+}
+
+.starterWizard--guide .starterWizard__content h2 {
+  margin-top: 1em;
+}
+
+.starterWizard--guide .starterWizard__content .table--wrapper {
+  overflow-x: auto;
+}
+
+.starterWizard--guide .starterWizard__content table {
+  width: 100%;
+  margin: 1em 0;
+}
+
+.starterWizard--guide .starterWizard__content table th {
+  text-align: center;
+  background: #EAECF0;
+  padding: 5px;
+  border: solid 1px #ccc;
+}
+
+.starterWizard--guide .starterWizard__content table td {
+  background: #F8F9FA;
+  padding: 5px;
+  border: solid 1px #ccc;
+}
+
+.starterWizard--guide .starterWizard__content table caption {
+  font-weight: bold;
+  color: #000;
+}
+
+@media (min-width: 768px) {
+    .starterWizard--guide .starterWizard__content table caption {
+        text-align: center;
+    }
+}
+
+
+.starterWizard--guide .max-width-500 {
+  max-width: 500px;
+}
+.starterWizard--guide .max-width-319 {
+  max-width: 319px;
+}
+.starterWizard--guide .max-width-382 {
+  max-width: 382px;
+}
+.starterWizard--guide .max-width-392 {
+  max-width: 392px;
+}
+.starterWizard--guide .max-width-407 {
+  max-width: 407px;
+}

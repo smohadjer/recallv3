@@ -1,0 +1,142 @@
+/* customizing quill content */
+
+.ql-snow {
+    background: #fff;
+}
+
+.ql-container {
+    font-family: 'NotoSans', 'Helvetica', 'Arial', sans-serif !important;
+    font-weight: 300 !important;
+    font-size: 14px !important;
+}
+
+.ql-snow  .ql-editor {
+    word-break: break-word;
+    height: 200px;
+}
+
+.ql-snow .ql-editor h1 {
+    font-size: 36px !important;
+}
+.ql-snow .ql-editor h2 {
+    font-size: 30px !important;
+}
+.ql-snow .ql-editor h3 {
+    font-size: 24px !important;
+}
+.ql-snow .ql-editor h4 {
+    font-size: 18px !important;
+}
+.ql-snow .ql-editor h5 {
+    font-size: 14px !important;
+}
+.ql-snow .ql-editor h6 {
+    font-size: 12px !important;
+}
+
+.ql-snow .ql-editor h1,
+.ql-snow .ql-editor h2,
+.ql-snow .ql-editor h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.ql-snow .ql-editor p {
+    margin: 0 0 10px !important;
+}
+
+.ql-snow .ql-editor ul,
+.ql-snow .ql-editor ol {
+    margin-top: 0 !important;
+    margin-bottom: 10px !important;
+}
+
+.ql-snow .ql-editor ul {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    padding-inline-start: 40px !important;
+}
+
+.ql-snow .ql-editor ul > li {
+    list-style-type: disc !important;
+    padding-left: 0 !important;
+}
+
+.ql-snow .ql-editor ul > li::before {
+    content: none !important;
+}
+
+.ql-bg-black {
+  background-color: #000;
+}
+.ql-bg-red {
+  background-color: #e60000;
+}
+.ql-bg-orange {
+  background-color: #f90;
+}
+.ql-bg-yellow {
+  background-color: #ff0;
+}
+.ql-bg-green {
+  background-color: #008a00;
+}
+.ql-bg-blue {
+  background-color: #06c;
+}
+.ql-bg-purple {
+  background-color: #93f;
+}
+.ql-color-white {
+  color: #fff;
+}
+.ql-color-red {
+  color: #e60000;
+}
+.ql-color-orange {
+  color: #f90;
+}
+.ql-color-yellow {
+  color: #ff0;
+}
+.ql-color-green {
+  color: #008a00;
+}
+.ql-color-blue {
+  color: #06c;
+}
+.ql-color-purple {
+  color: #93f;
+}
+
+.ql-font-serif {
+  font-family: Georgia, Times New Roman, serif !important;
+}
+.ql-font-monospace {
+  font-family: Monaco, Courier New, monospace !important;
+}
+
+.ql-size-small {
+  font-size: 0.75em;
+}
+.ql-size-large {
+  font-size: 1.5em;
+}
+.ql-size-huge {
+  font-size: 2.5em;
+}
+
+.ql-direction-rtl {
+  direction: rtl;
+  text-align: inherit;
+}
+
+.ql-align-center {
+  text-align: center;
+}
+.ql-align-justify {
+  text-align: justify;
+}
+.ql-align-right {
+  text-align: right;
+}

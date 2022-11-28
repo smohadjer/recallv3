@@ -61,12 +61,10 @@ h1 + p {
 
 a, a:focus {
   color: #007878;
-  text-decoration: none;
 }
 
 a:hover {
   color: #036060;
-  text-decoration: underline;
 }
 
 figure {
@@ -78,9 +76,12 @@ figure img {
 	width: 100%;
 }
 
+main > article,
 aside {
-  background: #ddd; 
-}
+  padding: 0 20px; }
+
+aside {
+  background: #ddd; }
 
 ul {
   padding-left: 1em;
@@ -107,6 +108,7 @@ li {
 
 button {
   padding: 0.5em 1em;
+  border-radius: 0.5em;
 }
 
 textarea {
@@ -116,7 +118,9 @@ textarea {
 
 footer {
 	margin: 3em 1em 1em;
-  border-top: solid 1px #999;
+    border-top: solid 1px #ccc;
+	font-size: smaller;
+	color: #666;
 }
 
 table {

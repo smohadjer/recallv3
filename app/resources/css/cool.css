@@ -1,0 +1,40 @@
+.site-index .jumbotron h2, .site-index .jumbotron h4 { width: 82%; margin: 0 auto;}
+.site-index .jumbotron h2 { margin-bottom: 16px; padding: 16px; border-bottom: 1px solid #777; }
+.site-index .jumbotron h4 { margin: 12px auto 52px auto; font-style: italic; }
+.site-index .jumbotron { margin: 7% auto; padding: 18px; }
+
+@media only screen and (min-width: 720px) {
+
+    body .container-fluid .site-index > .jumbotron { width: 80%; padding: 48px; }
+}
+
+.blink_text {
+    animation:1s blinker linear infinite;
+    -webkit-animation:1s blinker linear infinite;
+    -moz-animation:1s blinker linear infinite;
+
+     color: #dd0000;
+    }
+
+    @-moz-keyframes blinker {
+     0% { opacity: 1.0; }
+     50% { opacity: 0.0; }
+     100% { opacity: 1.0; }
+     }
+
+    @-webkit-keyframes blinker {
+     0% { opacity: 1.0; }
+     50% { opacity: 0.0; }
+     100% { opacity: 1.0; }
+     }
+
+    @keyframes blinker {
+     0% { opacity: 1.0; }
+     50% { opacity: 0.0; }
+     100% { opacity: 1.0; }
+  }
+
+.c3-chart-arc text {
+    /*fill: black;*/
+    display: none;
+}

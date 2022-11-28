@@ -1,0 +1,394 @@
+html,
+body {
+    height: 100%;
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.wrap > .container {
+    padding: 70px 15px 20px;
+}
+
+.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #000000;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: /*"\e113"*/ "\e151";
+}
+
+a.desc:after {
+    content: /*"\e114"*/ "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+#reset-password-form .hint-block ul,
+#login-form .hint-block ul,
+#signup-form .hint-block ul {
+    padding-inline-start: 20px;
+}
+
+.form-group.is-focused .help-block {
+    display: none !important;
+}
+
+.form-group.has-error .help-block {
+    display: block !important;
+    position: unset !important;
+}
+
+.error-summary {
+    color: #dd0000;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+.c3-chart-arcs-background {
+    cursor: pointer;
+    fill: #dd0000 !important;
+}
+
+i.glyphicon { margin-right: 8px; }
+
+.nav-tabs li.active { border-bottom: 5px solid #FFFF00; }
+.tabs-above > .nav-tabs > li.active > a { color: rgb(255, 255, 235) !important }
+pre {
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+  margin-bottom: 14px;
+  overflow: auto;
+  width: auto;
+  padding: 5px;
+  background-color: #eee;
+  padding-bottom: 20px;
+  max-height: 600px;
+  white-space: pre-wrap;
+  word-break: normal;
+  text-align: left;
+}
+
+.percentbar { background:#CCCCCC; border:1px solid #666666; height:10px; }
+.percentbar div { background: #28B8C0; height: 10px; width: 100% }
+
+/* start of overriding bootstrap styles for navigation */
+.navbar {
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+    .navbar .navbar-collapse {
+        padding-right: 0;
+    }
+}
+
+.navbar-primary .dropdown-toggle {
+    display: flex !important;
+    align-items: center;
+}
+
+.navbar-primary .navbar-nav > li.help > a > span {
+    padding: 8px 20px 9px;
+    border-radius: 18px;
+    background: white;
+    color: #036060;
+    font-weight: 500;
+}
+
+.navbar .navbar-nav > li > a {
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+.navbar-primary .dropdown-toggle .caret {
+    margin-left: 5px;
+}
+
+.navbar .navbar-nav > .active > a,
+.navbar .navbar-nav > .active > a:hover,
+.navbar .navbar-nav > .active > a:focus {
+    background-color: rgba(0, 0, 0, 0.2) !important;
+}
+/* end of overriding bootstrap styles for navigation */
+
+#event-tab-container > .tab-content { padding: 10px 2px; }
+#event-tab-container > .tab-content .emphasized  {
+    color: #dd0000;
+}
+
+.container-fluid > .section > .row:first-child p.text-right { margin-bottom: 0; }
+.container-fluid > .section > .row > div > .container-fluid { padding: 0; }
+
+body > .container-fluid { padding: 0 15px; }
+body > .container-fluid > .row { margin-left: 0; margin-right: 0 }
+
+.site-login, .site-request-password-reset, .site-reset-password, .password-index { margin: 10% auto; max-width: 600px; }
+.site-login form, .site-request-password-reset form, .site-reset-password form, .password-index form { margin-bottom: 18px; }
+.site-login form .form-group:last-child, .site-request-password-reset .form-group:last-child, .site-reset-password .form-group:last-child, .password-index form .form-group:last-child { margin-top: 16px; }
+.site-login form .form-group > div > button, .site-request-password-reset form .form-group > div > button, .site-reset-password form .form-group > div > button, .password-index form .form-group > div > button { float: right; }
+.site-login form .form-group > div > button:not(:last-child), .site-request-password-reset form .form-group > div > button:not(:last-child), .site-reset-password form .form-group > div > button:not(:last-child), .password-index form .form-group > div > button:not(:last-child) { margin-left: 10px; }
+.site-login form .form-group label {
+    color: #666;
+}
+.site-login form .form-group.has-error label.control-label,
+.site-login form .form-group.has-error .help-block {
+    color: #dd0000;
+}
+.site-login form .form-group.has-success label.control-label,
+.site-login form .form-group.has-success .help-block {
+    color: #007878;
+}
+.site-login form .form-group.has-success.is-focused .form-control {
+    background-image: linear-gradient(#007878, #007878), linear-gradient(#D2D2D2, #D2D2D2)
+}
+
+.page-footer { z-index: 1000; }
+.site-signup { padding-bottom: 100px; margin: 5% auto; max-width: 800px; }
+.site-signup form { margin-bottom: 18px; }
+.site-signup form .form-group:last-child { margin-top: 16px; }
+.site-signup form .form-group > div > button { float: right; }
+.site-signup form .form-group > div > button:not(:last-child) { margin-left: 10px; }
+
+.page-footer h3 { font-size: 22px; }
+.footer-copyright { margin-top: 8px; margin-bottom: 10px; }
+.footer-copyright > .container-fluid { display: flex; padding: 0; }
+.footer-copyright > .container-fluid > div { display: flex }
+.footer-copyright > .container-fluid > div:last-child { flex-direction: row-reverse; }
+.footer-copyright > .container-fluid > div > p { margin-bottom: 0; align-self: flex-end; }
+.footer-copyright > .container-fluid > div:nth-child(2):not(:last-child) > p { width: 100%; text-align: right; }
+
+@media only screen and (min-width: 600px) {
+    .site-login form .form-group > div, .site-request-password-reset form .form-group > div, .site-reset-password form .form-group > div, .password-index form .form-group > div { width: 60%;  }
+    .support-nav > ul { width: 80%; }
+}
+
+body > .container-fluid { min-height: 600px }
+
+body.support .row:first-child { margin-bottom: 12px; }
+.support-nav h3, .support-content h3 { font-size: 22px; }
+
+.support-nav h3 { margin: 0 0 14px 0; cursor: default; }
+.support-nav ul { padding-left: 24px; }
+.support-nav li > a { padding: 12px 6px; font-size: 16px; }
+.support-nav li > a:hover:not(.nav-active) { color: #328378; text-shadow: 3px 3px 2px rgba(128, 200, 200, 0.4) }
+.support-nav li > a.nav-active { color: #b4b4b4; cursor: default }
+.support-items { list-style-type: none; padding-left: 12px; }
+.support-items > li { margin-bottom: 16px; }
+.support-items > li > a { font-size: 16px; }
+
+.support-content h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #999
+}
+
+.event-id { text-align: right; }
+i.fa { margin-right: 6px; }
+.btn-group > .btn.btn-raised.btn-default { background-color: #dddddd }
+.btn-group.pull-right > .btn:not(:first-child) { margin-left: 6px; }
+
+@media (max-width: 991px) {
+    .btn-group {
+        line-height: 40px;
+    }
+
+    .btn-group > .btn.btn-raised.btn-default {
+        float: none;
+        margin-left: 0;
+        margin-right: 6px;
+    }
+}
+
+.event-info-row > div > h1,
+.event-info-row > div > h2,
+.event-info-row > div > h3 {
+    margin: 6px 0 12px;
+    font-size: 24px;
+}
+
+#verified-message-row-top { margin-bottom: 16px; }
+#event-tab-tab3 .row { margin-bottom: 12px; }
+#refresh_charts { margin: 2px 0; }
+
+input.verify-checkbox { margin: 14px 0 7px; }
+input.verify-checkbox + span { margin-left: 6px; font-style: italic }
+
+
+canvas.audio {
+    background: #202020;
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px rgba(0, 255, 221, 0.671);
+}
+
+.panel-audio > .panel-body > div.row {
+    margin-bottom: 12px;
+}
+
+.panel-audio .control-group {
+    max-width: 670px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.panel-audio .control-group .controls {
+
+}
+
+.panel-audio .controls > button {
+    float: left;
+    margin: 0 10px 0 0;
+    border: 1px solid #999;
+    text-shadow: inset 1px 1px 1px #000;
+    height: 42px;
+    padding: 8px 24px;
+}
+
+.panel-audio .controls > button:last-child { margin-right: 0 }
+
+.panel-audio .controls > button:disabled {  }
+
+.panel-audio .controls > button:disabled:hover:not([data-active=true]) {
+    background-color: transparent !important;
+}
+
+.panel-audio .controls > button > i.fa {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.panel-audio .controls > #btn_record[data-active=true] {
+    background-color: rgba(200, 0, 0, 0.5);
+}
+.panel-audio .controls > #btn_play[data-active=true] {
+    background-color: rgba(0, 200, 0, 0.5);
+}
+.panel-audio #clock {
+    background: #000;
+    border: inset 1px solid #999;
+    font-family: monospace;
+    color: #fff;
+    font-size: 18px;
+    height: 42px;
+    width: 120px;
+    text-align: center;
+    padding: 8px 12px;
+}
+
+#btn_record { color: rgb(192, 0, 0) }
+
+#btn_record:disabled { color: rgb(216, 209, 209) }
+
+.bold-required {
+    font-weight: bold;
+    text-decoration: none;
+    color: #dd0000;
+    margin-left: 2px;
+}
+
+.verified-message-row {
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+.verified-message-row > div > ul { padding-left: 10px; margin: 0 }
+.verified-message-row > div > span { width: 80%; margin: 0 auto }
+.verified-message-row > div > button { margin: 12px 0 }
+
+.breadcrumbs { margin: 0 0 8px 0; }
+.breadcrumbs a { cursor: pointer; }
+.breadcrumbs a .fa { color: #000; }
+
+/*onclick is broken for the piecharts.  https://github.com/c3js/c3/issues/2329*/
+.c3-event-rects {
+   display: none;
+}
+
+.site-request-password-reset input#passwordresetrequestform-username {
+    border: solid 1px #ccc;
+    background: none;
+    height: auto;
+    padding: 2px 5px;
+}
+
+.site-request-password-reset .form-group label.control-label {
+    margin: 8px 0 0;
+    color: #666 !important;
+    font-size: 14px;
+    padding: 0;
+}
+
+.site-request-password-reset .form-group {
+    margin-top: 40px;
+}
+
+.site-request-password-reset .form-group + .form-group {
+    margin-top: 0;
+}
+
+.site-request-password-reset .footnote {
+    font-size: 13px;
+    margin: 20px 0;
+}
